@@ -30,3 +30,8 @@ A partir de acá, podés:
 
 - Escribir nuevo código en `src/Library.hs` y probarlo con tests que se escriben en `test/Spec.hs`
   ![Agregado un test en test/Spec.hs que dice que el cuadruple de un numero es el doble de su doble, y testeado que 4 `shouldBe` 1. Corrido el test con `stack test` (que falla), luego definida una función en src/Library.hs que hace pasar ese test, la definición es `cuadruple numero = doble (doble numero)`. Tras haber hecho eso, se corren de nuevo los tests, que esta vez pasan.](https://i.imgur.com/8nbJ7RO.gif)
+  
+# ¿Qué es el PdePreludat?
+
+Es una librería que cambia un poco lo que sería la librería estandar que usa Haskell automáticamente (la cual se llama Prelude). Idealmente simplifica algunas cosas que no son necesarias a la materia y mejora algunos mensajes de error.
+Para leer más sobre esto: https://github.com/10Pines/pdepreludat
