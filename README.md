@@ -3,6 +3,12 @@ Repo con el pdepreludat ya setupeado como para usar de ejemplo para empezar proy
 
 # ¿Como uso esto?
 
+## Prerrequisito
+
+[Tener instalados stack y git.](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/entorno.md)
+
+## Ahora sí
+
 1. Clonar el repo: `https://github.com/JuanFdS/pdepreludat-ejemplo.git` o `git@github.com:JuanFdS/pdepreludat-ejemplo.git`
 
 2. Moverse a la carpeta del repo: `cd pdepreludat-ejemplo`.
