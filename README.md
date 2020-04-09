@@ -11,7 +11,7 @@
 
 ## Integrantes
 
-**Equipo:**  The C#Sharps
+**Equipo:**  Team Rocket
 
 - Juan Fernandes (@juanFdS)
 - Federico Romero (@fecheromero)
