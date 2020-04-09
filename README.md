@@ -94,9 +94,9 @@ Entonces, vamos a implementar unas funciones que hagan esto por nosotros:
 - **celsiusAFarenheit**: toma una temperatura (que la vamos a representar como un número) en celsius, y la convierte a farenheit. 
 - **farenheitACelsius**: está función hace el camino inverso a la anterior, le damos una temperatura en farenheit y la pasa a celsius.
 
-Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. Nuestro criterio va a ser que hace frío sólo si la temperatura es menor a **8 grados Celsius**. Entonces, definamos:
+Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. Nuestro criterio va a ser que hace frío sólo si la temperatura es menor o igual a **8 grados Celsius**. Entonces, definamos:
 
-- **haceFrioCelsius**: recibe una temperatura (en Celsius) y debería ser verdadero si hace menos de 8 grados Celsius.
+- **haceFrioCelsius**: recibe una temperatura (en Celsius) y debería ser verdadero si hace igual o menos de 8 grados Celsius.
 - **haceFrioFarenheit**: ésta recibe la temperatura como parámetro en Farenheit, pero el criterio para saber si hace frío es el mismo de antes.
 
 **Para `haceFrioCelsius` y `haceFrioFarenheit` también tienen que escribir el tipo ustedes**.
