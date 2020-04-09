@@ -13,11 +13,11 @@ packages:
     git: https://github.com/10Pines/pdepreludat.git
     pantry-tree:
       size: 1680
-      sha256: 2548db565062e551dd2efdcdbba12252ae4943c8f0c5fb126e5f909d668846d4
-    commit: 0e64339f173dca6646f2d41188207806812cdd79
+      sha256: e8670418d04e609179cbb75139b163b536eb7d274a91ff833b4c3d55196761d9
+    commit: 5da1a7de5089856fa1cdade70271237ca866ec9f
   original:
     git: https://github.com/10Pines/pdepreludat.git
-    commit: 0e64339f173dca6646f2d41188207806812cdd79
+    commit: 5da1a7de5089856fa1cdade70271237ca866ec9f
 snapshots:
 - completed:
     size: 491373
