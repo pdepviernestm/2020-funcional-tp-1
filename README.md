@@ -4,25 +4,24 @@ Antes que nada, [¿qué es una kata?](https://github.com/pdep-utn/enunciados-mie
 
 ## Tareas
 
-- [ ] Instalar [el entorno](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/entorno.md)
 - [ ] [Aceptar el assignment y clonar el repositorio con el ejercicio](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/katas/katas-guia.md)
-- [ ] Ir a la carpeta donde descargaste la kata. Ejemplo: `cd /home/dodain/haskell/mn-funcional-kata01`. Ejecutar `stack test` y verificar que tengas un mensaje verde que diga `El pdepreludat se instaló correctamente`
-- [ ] Reemplazar la lista de integrantes con tu nombre
+- [ ] Ir a la carpeta donde descargaste la kata. Ejemplo: `cd /home/juan/haskell/2020-funcional-tp-1`. Ejecutar `stack build --test`.
+- [ ] Reemplazar la lista de integrantes con los nombres de los integrantes del equipo en el archivo README.md
 - [ ] Resolver el ejercicio siguiendo [un esquema de trabajo](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md), eso incluye
 - [ ] Ejecutar los tests con `stack test` y que den verde
-- [ ] Subir [tu solución a git](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/git/resolverConflictos.md)
-- [ ] Ver el resultado de la ejecución en http://travis-ci.com siguiendo [estos pasos y agregando el badge del build](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/katas/kata-ci-travis.md)
+- [ ] A medida que vas resolviendo el ejercicio, subir [el progreso a git](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/git/resolverConflictos.md)
 
 ## Integrantes
 
-- Juan Contardo (Juancete)
-- Fernando Dodino (fdodino)
+**Equipo:**  The C#Sharps
+
+- Juan Fernandes (@juanFdS)
+- Federico Romero (@fecheromero)
 
 ## Objetivos
 
-La primera kata que preparamos para que resuelvan solos comparte los objetivos de la anterior
+La primera kata que preparamos para que resuelvan tiene como objetivos:
 
-- verificar que tenés correctamente instalado el entorno
 - familiarizarte con el uso del lenguaje Haskell y de la herramienta Visual Studio Code
 - que entiendas el circuito básico de toda kata, bajando el enunciado desde un repositorio, completando el ejercicio y subiendo tu solución
 - utilizar pruebas automatizadas para facilitar la validación del código que escribís
@@ -31,53 +30,107 @@ y de paso, fomentar el trabajo en equipo con un compañero, para comenzar a disc
 
 ## Pre-requisitos
 
-Necesitás instalar en tu notebook [el entorno Haskell](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/entorno.md)
+Necesitás haber instalado el ambiente según se explica en el [TP-0](https://classroom.github.com/a/--fY8B_v).
 
 ## Ayuda
 
 Si tenés dudas con Haskell podés ayudarte todo el tiempo con esta documentación
 
-- [Guía de lenguajes](https://docs.google.com/document/d/1oJ-tyQJoBtJh0kFcsV9wSUpgpopjGtoyhJdPUdjFIJQ/edit?usp=sharing), un resumen de las principales funciones que vienen con Haskell
-- [Hoogle](https://www.haskell.org/hoogle/), un motor de búsqueda específico para Haskell
+- [Guía de lenguajes](https://docs.google.com/document/d/1oJ-tyQJoBtJh0kFcsV9wSUpgpopjGtoyhJdPUdjFIJQ/edit?usp=sharing), un resumen de las principales funciones que vienen con Haskell.
+- [Hoogle](https://www.haskell.org/hoogle/), un motor de búsqueda específico para Haskell.
+- Preguntando a tus ayudantes en [discord](https://discord.gg/4KY8PWp)!
 
-Y para comenzar a trabajar con Git te recomendamos [este apunte inicial de Git](https://docs.google.com/document/d/1ozqfYCwt-37stynmgAd5wJlNOFKWYQeIZoeqXpAEs0I/edit). Una vez que estés familiarizado con el circuito, tenés un buen resumen de los comandos en las páginas 3 y 4 [de este apunte](https://docs.google.com/document/d/147cqUY86wWVoJ86Ce0NoX1R78CwoCOGZtF7RugUvzFg/edit#).
+Y para comenzar a trabajar con Git te recomendamos [este apunte inicial de Git](https://docs.google.com/document/d/1ozqfYCwt-37stynmgAd5wJlNOFKWYQeIZoeqXpAEs0I/edit) o estos videos donde se explica como usar Git:
+- [Parte 1: Qué es GIT y cómo clonar el repo basado en GitHub classroom](https://www.youtube.com/watch?v=rRKe7l-ZNvM)
+- [Parte 2: Uso básico de GIT con status, add, reset, commit, push](https://www.youtube.com/watch?v=OgasfM5qJJE)
+- [Parte 3: Resolución de conflictos](https://www.youtube.com/watch?v=sKcN7cWFniw)
 
-## El enunciado
+### Probando cosas por consola
 
-Resolver la función `calcuLoco` que recibe dos números
+La forma que recomendamos de resolver la kata es no programar todo de una y después ver si anda, si no ir probando en cada paso a medida que van programando cada función.
 
-- si el primer número es mayor que el segundo, devuelve la división de ambos números
-- si no, si el primer número es impar, devuelve el segundo número menos 5
-- en caso contrario, devuelve el doble del primer número 
+Para esto, les recomiendo que usen mucho `stack ghci` para probar cosas por consola, y vuelvo a linkear [esta página](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md#comandos-%C3%BAtiles) donde se explican un par de cositas de como usar `ghci`.
 
-## Pruebas manuales
-
-Una vez resuelta la función `calcuLoco` podemos levantar el entorno Haskell:
-
-```bash
-stack ghci
-```
-
-Y dentro del intérprete podremos evaluar la función con diferentes valores:
-
-```hs
-*Main> calcuLoco 6 2
-3.0
-*Main> calcuLoco 5 7
-2.0
-*Main> calcuLoco 8 10
-16.0
-```
-
-## Testeo automatizado
+### Testeo automatizado
 
 Nuestra solución tiene que estar escrita en el archivo `Library.hs` del directorio `src`, entonces podemos correr pruebas **automatizadas** para nuestra función `calcuLoco` en la terminal:
 
 ```bash
-stack clean
 stack test
 ```
 
-También podés ejecutar una sesión interactiva en la terminal: `stack test --file-watch`, como muestra [esta página](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md).
+También podés ejecutar una sesión interactiva en la terminal lo cual hace que los tests se vuelvan a correr solos cada vez que guardas!: `stack test --file-watch`, como muestra [esta página](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md#pruebas-automatizadas).
 
 Para conocer un poco más del testeo unitario automatizado recomendamos leer [este apunte](https://docs.google.com/document/d/17EPSZSw7oY_Rv2VjEX2kMZDFklMOcDVVxyve9HSG0mE/edit#)
+
+## El enunciado
+
+En esta kata está partida en 4 partes que van aumentando de a poco en complejidad (o esa fue la intención). En cada uno van a tener que implementar las definiciones de algunas funciones para las que ya les vamos a dar tests que prueben que su solución esta funcionando correctamente y (en la mayoría de los casos) los tipos. Algunas de las funciones además de pedirles la implementación también les vamos a pedir que definan sus tipos.
+
+1. Números
+
+Empecemos definiendo algunas funciones simples sobre números:
+
+- **siguiente**: toma un número como parámetro y devuelve ese número + 1.
+- **esPositivo**: nos dice si un número es mayor a 0 o no. Es falso para 0.
+- **inversa**: aplicar la inversa a un número nos da como resultado 1 dividido ese número. Por ejemplo, la inversa de 2 es 0.5 porque 1/2 es 0.5. **Para está función, también tienen que escribir el tipo ustedes**
+
+2. Temperaturas
+
+Las temperaturas en diferentes países se miden en grados, pero no todos usan el mismo sistema de medida. En la mayor partedel el mundo usamos los grados Celsius (°C) pero en algunos países como en Estados Unidos se usan los grados Farenheit (°F).
+¿Cómo se pasa de celsius a farenheit? Usando la siguiente formula:
+
+```
+GradosFarenheit = GradosCelsius × 1.8 + 32
+```
+
+Y para el otro lado se puede obtener despejando GradosCelsius:
+
+```
+GradosCelsius = (GradosFarenheit - 32) / 1.8
+```
+
+Entonces, vamos a implementar unas funciones que hagan esto por nosotros:
+
+- **celsiusAFarenheit**: toma una temperatura (que la vamos a representar como un número) en celsius, y la convierte a farenheit. 
+- **farenheitACelsius**: está función hace el camino inverso a la anterior, le damos una temperatura en farenheit y la pasa a celsius.
+
+Ahora, queremos una función a la cuál podamos preguntarle si hace frío o no. Nuestro criterio va a ser que hace frío sólo si la temperatura es menor a **8 grados Celsius**. Entonces, definamos:
+
+- **haceFrioCelsius**: recibe una temperatura (en Celsius) y debería ser verdadero si hace menos de 8 grados Celsius.
+- **haceFrioFarenheit**: ésta recibe la temperatura como parámetro en Farenheit, pero el criterio para saber si hace frío es el mismo de antes.
+
+**Para `haceFrioCelsius` y `haceFrioFarenheit` también tienen que escribir el tipo ustedes**.
+
+3. Más números!
+
+Acá vamos a definir un par de funciones muy útiles, `max` y `min`.
+- **max** toma dos valores como parámetro y nos devuelve aquel que sea mas grande
+- **min** toma lo mismo que max pero nos devuelve el que sea mas chico.
+Entonces, yo puedo hacer `min 2 3` y el resultado sería `2`, y si hago `max 3 15.5` el resultado debería ser 15.5.
+
+Como estas funciones ya existen en Haskell, pero queremos definirlas igual para practicar, vamos a ponerles de nombre `max'` y `min'` (el ' es un caracter valido para las funciones en Haskell), y en este ejercicio no vale definirlas como `max' = max` ;).
+
+4. Pinos
+
+En una plantación de pinos, de cada árbol se conoce la altura expresada en metros. El peso de un pino se puede calcular a partir de la altura así:
+
+  - 3 kg por cada centímetro hasta 3 metros,
+  - 2 kg por cada centímetro arriba de los 3 metros. 
+
+![](https://raw.githubusercontent.com/MumukiProject/mumuki-guia-funcional-practica-valores-y-funciones/master/images/pino.png)
+
+Por ejemplo:
+
+  - 2 metros pesan 600 kg, porque 200 * 3 = 600
+  - 5 metros pesan 1300 kg, porque los primeros 3 metros pesan 900 kg y los siguientes 2 pesan los 400 restantes. 
+    
+![](https://raw.githubusercontent.com/MumukiProject/mumuki-guia-funcional-practica-valores-y-funciones/master/images/pinos.png)
+
+Los pinos se usan para llevarlos a una fábrica de muebles, a la que le sirven árboles de entre 400 y 1000 kilos, un pino fuera de este rango no le sirve a la fábrica. Entonces, un pino de 2 metros serviría porque pesa 600kg, pero un pino de 5 metros no serviría porque pesa 1300kg.
+
+Vamos a definir las siguientes funciones, y en este punto, todas van a ser tipadas por ustedes:
+
+- **pesoPino**: recibe la altura de un pino en metros y devuelve su peso.
+- **esPesoUtil**: recibe un peso en kg y responde si un pino de ese peso le sirve a la fábrica
+- **sirvePino**: recibe la altura de un pino y responde si un pino de ese peso le sirve a la fábrica. 
