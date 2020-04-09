@@ -133,3 +133,9 @@ Vamos a definir las siguientes funciones, y en este punto, todas van a ser tipad
 - **pesoPino**: recibe la altura de un pino en metros y devuelve su peso.
 - **esPesoUtil**: recibe un peso en kg y responde si un pino de ese peso le sirve a la fábrica
 - **sirvePino**: recibe la altura de un pino y responde si un pino de ese peso le sirve a la fábrica. 
+
+
+## Que hacer cuando terminan el TP
+
+Cuando terminen, creen un issue etiquetando a sus tutores así les llega una notificación y se corrigen y les dejan feedback ahí.
+![](https://i.imgur.com/ypeXpBw.gif)
