@@ -11,7 +11,7 @@ Asegurense de actualizar el nombre del issue con su grupo y el número de TP que
 
 Dejen acá el aviso a tus tutores, arrobando sus ids para que les llegue una notificación, y aclaren lo que crean necesario.
 
-> Pueden encontrar en la planilla del curso quienes son tus tutores: http://www.pdep.com.ar/Cursos/cursadas-anteriores/2020/2020-man-viernes
+Pueden encontrar en la planilla del curso quienes son tus tutores: http://www.pdep.com.ar/Cursos/cursadas-anteriores/2020/2020-man-viernes
 **Borren los ids de los tutores que no son de tu grupo así no les llega una notificación a todos:**
 @juanFdS - Juan Fernandes
 @ayelenMacarena - Aye García
