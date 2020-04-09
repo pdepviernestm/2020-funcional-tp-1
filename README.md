@@ -1,10 +1,8 @@
-# Primera kata para resolver
-
-Antes que nada, [¿qué es una kata?](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/katas/katas.md)
+# TP-1
 
 ## Tareas
 
-- [ ] [Aceptar el assignment y clonar el repositorio con el ejercicio](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/katas/katas-guia.md)
+- [ ] Aceptar el assignment y clonar el repositorio con el ejercicio
 - [ ] Ir a la carpeta donde descargaste la kata. Ejemplo: `cd /home/juan/haskell/2020-funcional-tp-1`. Ejecutar `stack build --test`.
 - [ ] Reemplazar la lista de integrantes con los nombres de los integrantes del equipo en el archivo README.md
 - [ ] Resolver el ejercicio siguiendo [un esquema de trabajo](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md), eso incluye
@@ -20,13 +18,13 @@ Antes que nada, [¿qué es una kata?](https://github.com/pdep-utn/enunciados-mie
 
 ## Objetivos
 
-La primera kata que preparamos para que resuelvan tiene como objetivos:
+El primer TP que preparamos para que resuelvan tiene como objetivos:
 
-- familiarizarte con el uso del lenguaje Haskell y de la herramienta Visual Studio Code
-- que entiendas el circuito básico de toda kata, bajando el enunciado desde un repositorio, completando el ejercicio y subiendo tu solución
-- utilizar pruebas automatizadas para facilitar la validación del código que escribís
+- que se familiaricen con el uso del lenguaje Haskell y de la herramienta Visual Studio Code
+- que entiendan el circuito básico del desarrollo de un ejercicio, desde bajar el enunciado desde un repositorio hasta completar cada parte e ir subiendo la solución en progreso en cada paso
+- utilizar pruebas automatizadas para facilitar la validación del código que escriben
 
-y de paso, fomentar el trabajo en equipo con un compañero, para comenzar a discutir ideas de programación en conjunto.
+y de paso, fomentar el trabajo en equipo con alguien más, para comenzar a discutir ideas de programación en conjunto.
 
 ## Pre-requisitos
 
@@ -34,13 +32,14 @@ Necesitás haber instalado el ambiente según se explica en el [TP-0](https://cl
 
 ## Ayuda
 
-Si tenés dudas con Haskell podés ayudarte todo el tiempo con esta documentación
+Si tienen dudas con Haskell pueden ayudarte todo el tiempo con esta documentación
 
 - [Guía de lenguajes](https://docs.google.com/document/d/1oJ-tyQJoBtJh0kFcsV9wSUpgpopjGtoyhJdPUdjFIJQ/edit?usp=sharing), un resumen de las principales funciones que vienen con Haskell.
 - [Hoogle](https://www.haskell.org/hoogle/), un motor de búsqueda específico para Haskell.
-- Preguntando a tus ayudantes en [discord](https://discord.gg/4KY8PWp)!
 
-Y para comenzar a trabajar con Git te recomendamos [este apunte inicial de Git](https://docs.google.com/document/d/1ozqfYCwt-37stynmgAd5wJlNOFKWYQeIZoeqXpAEs0I/edit) o estos videos donde se explica como usar Git:
+Aparte, siempre pueden preguntar a sus ayudantes en [discord](https://discord.gg/4KY8PWp)!
+
+Y para comenzar a trabajar con Git les recomendamos [este apunte inicial de Git](https://docs.google.com/document/d/1ozqfYCwt-37stynmgAd5wJlNOFKWYQeIZoeqXpAEs0I/edit) o estos videos donde se explica como usar Git:
 - [Parte 1: Qué es GIT y cómo clonar el repo basado en GitHub classroom](https://www.youtube.com/watch?v=rRKe7l-ZNvM)
 - [Parte 2: Uso básico de GIT con status, add, reset, commit, push](https://www.youtube.com/watch?v=OgasfM5qJJE)
 - [Parte 3: Resolución de conflictos](https://www.youtube.com/watch?v=sKcN7cWFniw)
@@ -59,7 +58,7 @@ Nuestra solución tiene que estar escrita en el archivo `Library.hs` del directo
 stack test
 ```
 
-También podés ejecutar una sesión interactiva en la terminal lo cual hace que los tests se vuelvan a correr solos cada vez que guardas!: `stack test --file-watch`, como muestra [esta página](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md#pruebas-automatizadas).
+También pueden ejecutar una sesión interactiva en la terminal lo cual hace que los tests se vuelvan a correr solos cada vez que guardas!: `stack test --file-watch`, como muestra [esta página](https://github.com/pdep-utn/enunciados-miercoles-noche/blob/master/pages/haskell/trabajo.md#pruebas-automatizadas).
 
 Para conocer un poco más del testeo unitario automatizado recomendamos leer [este apunte](https://docs.google.com/document/d/17EPSZSw7oY_Rv2VjEX2kMZDFklMOcDVVxyve9HSG0mE/edit#)
 
